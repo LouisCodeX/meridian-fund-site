@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Meridian Fund</title>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap' rel='stylesheet'>
+<style>
+:root{--bg:#0b1020;--panel:rgba(255,255,255,0.08);--accent1:#0ea5e9;--accent2:#7c3aed;--txt:#e5e7eb;--muted:#94a3b8;}
+*{box-sizing:border-box;font-family:Inter,sans-serif;margin:0;padding:0;}
+body{background:linear-gradient(130deg,var(--accent2),var(--accent1));color:var(--txt);}
+.container{max-width:1000px;margin:0 auto;padding:40px;}
+.hero{padding:60px 0;text-align:center;}
+.hero h1{font-size:48px;margin-bottom:16px;}
+.hero p{font-size:18px;color:var(--muted);margin-bottom:32px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+.card{background:var(--panel);padding:20px;border-radius:16px;backdrop-filter:blur(10px);}
+.section{padding:60px 0;}
+table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:12px;overflow:hidden;}
+th,td{padding:8px 10px;font-size:14px;border-bottom:1px solid rgba(255,255,255,0.1);}
+th{position:sticky;top:0;background:rgba(0,0,0,0.4);}
+.pos{color:#a7f3d0;} .neg{color:#fecaca;}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.member{background:var(--panel);border-radius:16px;overflow:hidden;}
+.member img{width:100%;height:auto;display:block;}
+.member div{padding:10px;}
+footer{padding:40px;text-align:center;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class='container'>
+<section class='hero'>
+  <img src='assets/logo.svg' alt='Logo' style='height:80px;margin-bottom:20px;'>
+  <h1>Meridian Fund</h1>
+  <p>Flexible, multi-strategy crypto fund run by practitioners. Market-neutral core with risk-controlled sleeves.</p>
+</section>
+<section class='grid'>
+  <div class='card'><h3>Objective</h3><p>Uncorrelated crypto alpha, stable returns, institutional governance.</p></div>
+  <div class='card'><h3>Risk foundation</h3><p>Room for tactical directional exposure when signals justify it; limits on top.</p></div>
+  <div class='card'><h3>Counterparty controls</h3><p>Ring-fenced vehicle, venue diversification, minimal idle balances, optional custody.</p></div>
+  <div class='card'><h3>Operating setup</h3><p>Prime-brokered DMA or multi-exchange setup; we choose what maximises net returns.</p></div>
+</section>
+<section class='section'>
+  <h2>Performance (net)</h2>
+  <table>
+    <thead><tr><th>Year</th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th><th>YTD</th></tr></thead>
+    <tbody>
+      <tr><td>2022</td><td class='pos'>1.95%</td><td class='pos'>2.65%</td><td class='pos'>2.25%</td><td class='pos'>1.90%</td><td class='pos'>1.40%</td><td class='pos'>1.70%</td><td class='pos'>2.05%</td><td class='pos'>3.75%</td><td class='pos'>3.85%</td><td class='neg'>-0.75%</td><td class='pos'>2.90%</td><td class='pos'>3.55%</td><td class='pos'>27.20%</td></tr>
+      <tr><td>2023</td><td class='pos'>3.65%</td><td class='pos'>4.25%</td><td class='pos'>3.10%</td><td class='pos'>6.50%</td><td class='pos'>2.90%</td><td class='pos'>0.40%</td><td class='neg'>-1.10%</td><td class='pos'>2.85%</td><td class='pos'>1.85%</td><td class='pos'>2.80%</td><td class='pos'>2.70%</td><td class='neg'>-0.70%</td><td class='pos'>29.20%</td></tr>
+      <tr><td>2024</td><td class='pos'>3.30%</td><td class='pos'>4.95%</td><td class='pos'>2.75%</td><td class='pos'>3.85%</td><td class='pos'>0.65%</td><td class='pos'>0.55%</td><td class='pos'>1.40%</td><td class='pos'>2.00%</td><td class='pos'>4.05%</td><td class='pos'>4.30%</td><td class='neg'>-4.35%</td><td class='pos'>20.75%</td><td class='pos'>30.40%</td></tr>
+      <tr><td>2025</td><td class='pos'>6.75%</td><td class='pos'>2.20%</td><td class='pos'>1.95%</td><td>0.05%</td><td class='neg'>-0.10%</td><td class='pos'>3.25%</td><td class='pos'>0.15%</td><td class='pos'>6.40%</td><td>–</td><td>–</td><td>–</td><td>–</td><td class='pos'>20.65%</td></tr>
+    </tbody>
+  </table>
+</section>
+<section class='section'>
+  <h2>Team</h2>
+  <div class='team-grid'>
+    <div class='member'><img src='assets/olivier.svg' alt='Olivier'><div><strong>Olivier Chevillon</strong><br><small>CEO & Research Head</small></div></div>
+    <div class='member'><img src='assets/julien.svg' alt='Julien'><div><strong>Julien Boudier</strong><br><small>Chief Risk Officer</small></div></div>
+    <div class='member'><img src='assets/louis.svg' alt='Louis'><div><strong>Louis Benassy</strong><br><small>COO</small></div></div>
+    <div class='member'><img src='assets/leo.svg' alt='Leo'><div><strong>Léo René</strong><br><small>Quant & Execution</small></div></div>
+    <div class='member'><img src='assets/yuval.svg' alt='Yuval'><div><strong>Yuval Reisman</strong><br><small>Partner</small></div></div>
+  </div>
+</section>
+<footer>
+  Meridian Fund SP (Atitlan SPC). DFi Labs SAS. For professional investors only. Not an offer or solicitation.
+</footer>
+</div>
+</body>
+</html>
